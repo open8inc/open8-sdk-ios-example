@@ -1,0 +1,6 @@
+framework module OPEN8Ad {
+  umbrella header "OPEN8Ad-umbrella.h"
+
+  export *
+  module * { export * }
+}

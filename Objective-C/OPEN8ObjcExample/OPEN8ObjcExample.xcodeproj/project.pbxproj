@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58E8B5DE05589D178E4CFA87 /* Pods_OPEN8ObjcExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB0EA7E9C58AF91DBE0B8B2 /* Pods_OPEN8ObjcExample.framework */; };
+		BB7B27EE1EE7ADC000C5B01E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B27ED1EE7ADC000C5B01E /* main.m */; };
+		BB7B27F11EE7ADC000C5B01E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B27F01EE7ADC000C5B01E /* AppDelegate.m */; };
+		BB7B27F71EE7ADC000C5B01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7B27F51EE7ADC000C5B01E /* Main.storyboard */; };
+		BB7B27F91EE7ADC000C5B01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7B27F81EE7ADC000C5B01E /* Assets.xcassets */; };
+		BB7B27FC1EE7ADC000C5B01E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7B27FA1EE7ADC000C5B01E /* LaunchScreen.storyboard */; };
+		BB7B28071EE7ADC000C5B01E /* OPEN8ObjcExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28061EE7ADC000C5B01E /* OPEN8ObjcExampleTests.m */; };
+		BB7B28121EE7ADC000C5B01E /* OPEN8ObjcExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28111EE7ADC000C5B01E /* OPEN8ObjcExampleUITests.m */; };
+		BB7B28351EE7BFDE00C5B01E /* OOEMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28341EE7BFDE00C5B01E /* OOEMenuTableViewController.m */; };
+		BB7B28381EE7DFA400C5B01E /* OOEInfeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28371EE7DFA400C5B01E /* OOEInfeedTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB7B28031EE7ADC000C5B01E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7B27E11EE7ADC000C5B01E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB7B27E81EE7ADC000C5B01E;
+			remoteInfo = OPEN8ObjcExample;
+		};
+		BB7B280E1EE7ADC000C5B01E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7B27E11EE7ADC000C5B01E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB7B27E81EE7ADC000C5B01E;
+			remoteInfo = OPEN8ObjcExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F3ACE73203B4BBA376E6061 /* Pods-OPEN8ObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPEN8ObjcExample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-OPEN8ObjcExample/Pods-OPEN8ObjcExample.release.xcconfig"; sourceTree = "<group>"; };
+		7DBC97252F3F728D97D29C5F /* Pods-OPEN8ObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPEN8ObjcExample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-OPEN8ObjcExample/Pods-OPEN8ObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
+		BB7B27E91EE7ADC000C5B01E /* OPEN8ObjcExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPEN8ObjcExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7B27ED1EE7ADC000C5B01E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB7B27EF1EE7ADC000C5B01E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB7B27F01EE7ADC000C5B01E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB7B27F61EE7ADC000C5B01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB7B27F81EE7ADC000C5B01E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB7B27FB1EE7ADC000C5B01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB7B27FD1EE7ADC000C5B01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7B28021EE7ADC000C5B01E /* OPEN8ObjcExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OPEN8ObjcExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7B28061EE7ADC000C5B01E /* OPEN8ObjcExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPEN8ObjcExampleTests.m; sourceTree = "<group>"; };
+		BB7B28081EE7ADC000C5B01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7B280D1EE7ADC000C5B01E /* OPEN8ObjcExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OPEN8ObjcExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7B28111EE7ADC000C5B01E /* OPEN8ObjcExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPEN8ObjcExampleUITests.m; sourceTree = "<group>"; };
+		BB7B28131EE7ADC000C5B01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7B28331EE7BFDE00C5B01E /* OOEMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOEMenuTableViewController.h; sourceTree = "<group>"; };
+		BB7B28341EE7BFDE00C5B01E /* OOEMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOEMenuTableViewController.m; sourceTree = "<group>"; };
+		BB7B28361EE7DFA400C5B01E /* OOEInfeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOEInfeedTableViewController.h; sourceTree = "<group>"; };
+		BB7B28371EE7DFA400C5B01E /* OOEInfeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOEInfeedTableViewController.m; sourceTree = "<group>"; };
+		CCB0EA7E9C58AF91DBE0B8B2 /* Pods_OPEN8ObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OPEN8ObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB7B27E61EE7ADC000C5B01E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E8B5DE05589D178E4CFA87 /* Pods_OPEN8ObjcExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7B27FF1EE7ADC000C5B01E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7B280A1EE7ADC000C5B01E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B447D69D16BA9E902D7E9DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC97252F3F728D97D29C5F /* Pods-OPEN8ObjcExample.debug.xcconfig */,
+				6F3ACE73203B4BBA376E6061 /* Pods-OPEN8ObjcExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A7F80C1AC61CE54602A8B65B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCB0EA7E9C58AF91DBE0B8B2 /* Pods_OPEN8ObjcExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB7B27E01EE7ADC000C5B01E = {
+			isa = PBXGroup;
+			children = (
+				BB7B27EB1EE7ADC000C5B01E /* OPEN8ObjcExample */,
+				BB7B28051EE7ADC000C5B01E /* OPEN8ObjcExampleTests */,
+				BB7B28101EE7ADC000C5B01E /* OPEN8ObjcExampleUITests */,
+				BB7B27EA1EE7ADC000C5B01E /* Products */,
+				0B447D69D16BA9E902D7E9DB /* Pods */,
+				A7F80C1AC61CE54602A8B65B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB7B27EA1EE7ADC000C5B01E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B27E91EE7ADC000C5B01E /* OPEN8ObjcExample.app */,
+				BB7B28021EE7ADC000C5B01E /* OPEN8ObjcExampleTests.xctest */,
+				BB7B280D1EE7ADC000C5B01E /* OPEN8ObjcExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB7B27EB1EE7ADC000C5B01E /* OPEN8ObjcExample */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B28321EE7BFB200C5B01E /* ViewControllers */,
+				BB7B27EF1EE7ADC000C5B01E /* AppDelegate.h */,
+				BB7B27F01EE7ADC000C5B01E /* AppDelegate.m */,
+				BB7B27F51EE7ADC000C5B01E /* Main.storyboard */,
+				BB7B27F81EE7ADC000C5B01E /* Assets.xcassets */,
+				BB7B27FA1EE7ADC000C5B01E /* LaunchScreen.storyboard */,
+				BB7B27FD1EE7ADC000C5B01E /* Info.plist */,
+				BB7B27EC1EE7ADC000C5B01E /* Supporting Files */,
+			);
+			path = OPEN8ObjcExample;
+			sourceTree = "<group>";
+		};
+		BB7B27EC1EE7ADC000C5B01E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B27ED1EE7ADC000C5B01E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB7B28051EE7ADC000C5B01E /* OPEN8ObjcExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B28061EE7ADC000C5B01E /* OPEN8ObjcExampleTests.m */,
+				BB7B28081EE7ADC000C5B01E /* Info.plist */,
+			);
+			path = OPEN8ObjcExampleTests;
+			sourceTree = "<group>";
+		};
+		BB7B28101EE7ADC000C5B01E /* OPEN8ObjcExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B28111EE7ADC000C5B01E /* OPEN8ObjcExampleUITests.m */,
+				BB7B28131EE7ADC000C5B01E /* Info.plist */,
+			);
+			path = OPEN8ObjcExampleUITests;
+			sourceTree = "<group>";
+		};
+		BB7B28321EE7BFB200C5B01E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B28331EE7BFDE00C5B01E /* OOEMenuTableViewController.h */,
+				BB7B28341EE7BFDE00C5B01E /* OOEMenuTableViewController.m */,
+				BB7B28361EE7DFA400C5B01E /* OOEInfeedTableViewController.h */,
+				BB7B28371EE7DFA400C5B01E /* OOEInfeedTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB7B27E81EE7ADC000C5B01E /* OPEN8ObjcExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7B28161EE7ADC000C5B01E /* Build configuration list for PBXNativeTarget "OPEN8ObjcExample" */;
+			buildPhases = (
+				790753B29792ADD679F1A747 /* [CP] Check Pods Manifest.lock */,
+				BB7B27E51EE7ADC000C5B01E /* Sources */,
+				BB7B27E61EE7ADC000C5B01E /* Frameworks */,
+				BB7B27E71EE7ADC000C5B01E /* Resources */,
+				993EAE21E59DCCED04900FF5 /* [CP] Embed Pods Frameworks */,
+				D4C3B7065E6779E9C9F773BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OPEN8ObjcExample;
+			productName = OPEN8ObjcExample;
+			productReference = BB7B27E91EE7ADC000C5B01E /* OPEN8ObjcExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB7B28011EE7ADC000C5B01E /* OPEN8ObjcExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7B28191EE7ADC000C5B01E /* Build configuration list for PBXNativeTarget "OPEN8ObjcExampleTests" */;
+			buildPhases = (
+				BB7B27FE1EE7ADC000C5B01E /* Sources */,
+				BB7B27FF1EE7ADC000C5B01E /* Frameworks */,
+				BB7B28001EE7ADC000C5B01E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB7B28041EE7ADC000C5B01E /* PBXTargetDependency */,
+			);
+			name = OPEN8ObjcExampleTests;
+			productName = OPEN8ObjcExampleTests;
+			productReference = BB7B28021EE7ADC000C5B01E /* OPEN8ObjcExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB7B280C1EE7ADC000C5B01E /* OPEN8ObjcExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7B281C1EE7ADC000C5B01E /* Build configuration list for PBXNativeTarget "OPEN8ObjcExampleUITests" */;
+			buildPhases = (
+				BB7B28091EE7ADC000C5B01E /* Sources */,
+				BB7B280A1EE7ADC000C5B01E /* Frameworks */,
+				BB7B280B1EE7ADC000C5B01E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB7B280F1EE7ADC000C5B01E /* PBXTargetDependency */,
+			);
+			name = OPEN8ObjcExampleUITests;
+			productName = OPEN8ObjcExampleUITests;
+			productReference = BB7B280D1EE7ADC000C5B01E /* OPEN8ObjcExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB7B27E11EE7ADC000C5B01E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = OPEN8;
+				TargetAttributes = {
+					BB7B27E81EE7ADC000C5B01E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JQS36S4G24;
+						ProvisioningStyle = Automatic;
+					};
+					BB7B28011EE7ADC000C5B01E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JQS36S4G24;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB7B27E81EE7ADC000C5B01E;
+					};
+					BB7B280C1EE7ADC000C5B01E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JQS36S4G24;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB7B27E81EE7ADC000C5B01E;
+					};
+				};
+			};
+			buildConfigurationList = BB7B27E41EE7ADC000C5B01E /* Build configuration list for PBXProject "OPEN8ObjcExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB7B27E01EE7ADC000C5B01E;
+			productRefGroup = BB7B27EA1EE7ADC000C5B01E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB7B27E81EE7ADC000C5B01E /* OPEN8ObjcExample */,
+				BB7B28011EE7ADC000C5B01E /* OPEN8ObjcExampleTests */,
+				BB7B280C1EE7ADC000C5B01E /* OPEN8ObjcExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB7B27E71EE7ADC000C5B01E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7B27FC1EE7ADC000C5B01E /* LaunchScreen.storyboard in Resources */,
+				BB7B27F91EE7ADC000C5B01E /* Assets.xcassets in Resources */,
+				BB7B27F71EE7ADC000C5B01E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7B28001EE7ADC000C5B01E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7B280B1EE7ADC000C5B01E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		790753B29792ADD679F1A747 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		993EAE21E59DCCED04900FF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8ObjcExample/Pods-OPEN8ObjcExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C3B7065E6779E9C9F773BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8ObjcExample/Pods-OPEN8ObjcExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB7B27E51EE7ADC000C5B01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7B27F11EE7ADC000C5B01E /* AppDelegate.m in Sources */,
+				BB7B27EE1EE7ADC000C5B01E /* main.m in Sources */,
+				BB7B28381EE7DFA400C5B01E /* OOEInfeedTableViewController.m in Sources */,
+				BB7B28351EE7BFDE00C5B01E /* OOEMenuTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7B27FE1EE7ADC000C5B01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7B28071EE7ADC000C5B01E /* OPEN8ObjcExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7B28091EE7ADC000C5B01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7B28121EE7ADC000C5B01E /* OPEN8ObjcExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB7B28041EE7ADC000C5B01E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB7B27E81EE7ADC000C5B01E /* OPEN8ObjcExample */;
+			targetProxy = BB7B28031EE7ADC000C5B01E /* PBXContainerItemProxy */;
+		};
+		BB7B280F1EE7ADC000C5B01E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB7B27E81EE7ADC000C5B01E /* OPEN8ObjcExample */;
+			targetProxy = BB7B280E1EE7ADC000C5B01E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB7B27F51EE7ADC000C5B01E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7B27F61EE7ADC000C5B01E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB7B27FA1EE7ADC000C5B01E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7B27FB1EE7ADC000C5B01E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB7B28141EE7ADC000C5B01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB7B28151EE7ADC000C5B01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB7B28171EE7ADC000C5B01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBC97252F3F728D97D29C5F /* Pods-OPEN8ObjcExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JQS36S4G24;
+				INFOPLIST_FILE = OPEN8ObjcExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.open8.Sdk.OPEN8ObjcExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB7B28181EE7ADC000C5B01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3ACE73203B4BBA376E6061 /* Pods-OPEN8ObjcExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JQS36S4G24;
+				INFOPLIST_FILE = OPEN8ObjcExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.open8.Sdk.OPEN8ObjcExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB7B281A1EE7ADC000C5B01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JQS36S4G24;
+				INFOPLIST_FILE = OPEN8ObjcExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.open8.OPEN8ObjcExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OPEN8ObjcExample.app/OPEN8ObjcExample";
+			};
+			name = Debug;
+		};
+		BB7B281B1EE7ADC000C5B01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JQS36S4G24;
+				INFOPLIST_FILE = OPEN8ObjcExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.open8.OPEN8ObjcExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OPEN8ObjcExample.app/OPEN8ObjcExample";
+			};
+			name = Release;
+		};
+		BB7B281D1EE7ADC000C5B01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = JQS36S4G24;
+				INFOPLIST_FILE = OPEN8ObjcExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.open8.OPEN8ObjcExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OPEN8ObjcExample;
+			};
+			name = Debug;
+		};
+		BB7B281E1EE7ADC000C5B01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = JQS36S4G24;
+				INFOPLIST_FILE = OPEN8ObjcExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.open8.OPEN8ObjcExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OPEN8ObjcExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB7B27E41EE7ADC000C5B01E /* Build configuration list for PBXProject "OPEN8ObjcExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7B28141EE7ADC000C5B01E /* Debug */,
+				BB7B28151EE7ADC000C5B01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7B28161EE7ADC000C5B01E /* Build configuration list for PBXNativeTarget "OPEN8ObjcExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7B28171EE7ADC000C5B01E /* Debug */,
+				BB7B28181EE7ADC000C5B01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7B28191EE7ADC000C5B01E /* Build configuration list for PBXNativeTarget "OPEN8ObjcExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7B281A1EE7ADC000C5B01E /* Debug */,
+				BB7B281B1EE7ADC000C5B01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7B281C1EE7ADC000C5B01E /* Build configuration list for PBXNativeTarget "OPEN8ObjcExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7B281D1EE7ADC000C5B01E /* Debug */,
+				BB7B281E1EE7ADC000C5B01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB7B27E11EE7ADC000C5B01E /* Project object */;
+}

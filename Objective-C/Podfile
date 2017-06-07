@@ -1,0 +1,9 @@
+workspace 'OPEN8ObjcExample'
+
+target :OPEN8ObjcExample do
+  project 'OPEN8ObjcExample/OPEN8ObjcExample.xcodeproj'
+  use_frameworks!
+
+  pod 'OPEN8Ad'
+end
+

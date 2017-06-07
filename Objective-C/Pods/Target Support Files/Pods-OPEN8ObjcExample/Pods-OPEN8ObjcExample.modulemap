@@ -1,0 +1,6 @@
+framework module Pods_OPEN8ObjcExample {
+  umbrella header "Pods-OPEN8ObjcExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
