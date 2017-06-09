@@ -12,10 +12,24 @@ private let kInfeedSegueIdentifier = "toInfeedViewController"
 
 class MenuTableViewController: UITableViewController {
     let menuItems = [
-        [
-            "title" : "infeed",
-            "segueIdentifier" : kInfeedSegueIdentifier
-        ]
+        MenuItem(
+            title: "infeed(ad at top)",
+            segueIdentifier: kInfeedSegueIdentifier,
+            adRows: [0],
+            contents: ["foo", "bar", "baz"]
+        ),
+        MenuItem(
+            title: "infeed(ad at middle)",
+            segueIdentifier: kInfeedSegueIdentifier,
+            adRows: [15],
+            contents: [
+                "foo", "bar", "baz", "foo", "bar", "baz",
+                "foo", "bar", "baz", "foo", "bar", "baz",
+                "foo", "bar", "baz", "foo", "bar", "baz",
+                "foo", "bar", "baz", "foo", "bar", "baz",
+                "foo", "bar", "baz", "foo", "bar", "baz"
+            ]
+        )
     ]
 
     override func viewDidLoad() {
@@ -48,7 +62,7 @@ class MenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kMenuItemCellIdentifier, for: indexPath)
 
-        cell.textLabel?.text = menuItems[indexPath.row]["title"]
+        cell.textLabel?.text = menuItems[indexPath.row].title
 
         // Configure the cell...
 
@@ -56,9 +70,15 @@ class MenuTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let segueIdentifier = menuItems[indexPath.row]["segueIdentifier"] {
-            performSegue(withIdentifier: segueIdentifier, sender: menuItems[indexPath.row])
-        }
+        performSegue(withIdentifier: menuItems[indexPath.row].segueIdentifier, sender: menuItems[indexPath.row])
         tableView.deselectRow(at: indexPath, animated: false)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == kInfeedSegueIdentifier {
+            if let menuItem = sender as? MenuItem, let vc = segue.destination as? InfeedTableViewController {
+                vc.item = menuItem
+            }
+        }
     }
 }

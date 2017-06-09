@@ -12,9 +12,10 @@ class InfeedTableViewController: UITableViewController, OEAInfeedAdProviderDeleg
     let kOriginalContentCellIdentifier = "originalContentCellIdentifier"
     let kAdCellIdentifier = "adCellIdentifier"
 
+    var item: MenuItem? = nil
     var adManager: OEAInfeedAdManagerProtocol? = nil
     var adProviders = [Int : OEAInfeedAdProviderProtocol]()
-    let originalContents = ["foo", "bar", "baz"]
+    var originalContents = Array<String>()
 
     var contents: Array<Either<String, OEAInfeedAdProviderProtocol>> = []
     
@@ -22,7 +23,10 @@ class InfeedTableViewController: UITableViewController, OEAInfeedAdProviderDeleg
         super.viewDidLoad()
         
         adManager = OEA.sharedInstance().createAdManager()
-        adProviders = createAdProviders(adIndexes: [0])
+        if let i = item {
+            adProviders = createAdProviders(adIndexes: i.adRows)
+            originalContents = i.contents
+        }
         contents = mergeContents()
         configureTableView()
     }

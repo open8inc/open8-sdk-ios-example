@@ -22,8 +22,21 @@ static NSString * const kInfeedSegueIdentifier = @"toInfeedViewController";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.menuItems = @[@{@"title" : @"infeed",
-                         @"segueIdentifier" : kInfeedSegueIdentifier
+    self.menuItems = @[@{@"title" : @"infeed(ad at top)",
+                         @"segueIdentifier" : kInfeedSegueIdentifier,
+                         @"adRows": @[@0],
+                         @"contents": @[@"foo", @"bar", @"baz"]
+                         },
+                       @{@"title" : @"infeed(ad at middle)",
+                         @"segueIdentifier" : kInfeedSegueIdentifier,
+                         @"adRows": @[@15],
+                         @"contents": @[@"foo", @"bar", @"baz", @"foo", @"bar",
+                                        @"baz", @"foo", @"bar", @"baz", @"foo",
+                                        @"bar", @"baz", @"foo", @"bar", @"baz",
+                                        @"foo", @"bar", @"baz", @"foo", @"bar",
+                                        @"baz", @"foo", @"bar", @"baz", @"foo",
+                                        @"bar", @"baz", @"foo", @"bar", @"baz"
+                                        ]
                          }
                        ];
 }
@@ -54,6 +67,13 @@ static NSString * const kInfeedSegueIdentifier = @"toInfeedViewController";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:self.menuItems[indexPath.row][@"segueIdentifier"] sender:self.menuItems[indexPath.row]];
     [self.tableView deselectRowAtIndexPath:indexPath animated:false];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:kInfeedSegueIdentifier]) {
+        OOEInfeedTableViewController *vc = (OOEInfeedTableViewController *)segue.destinationViewController;
+        vc.item = sender;
+    }
 }
 
 @end

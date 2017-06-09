@@ -17,6 +17,7 @@
 		BB7B28771EE908DC00C5B01E /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28761EE908DC00C5B01E /* MenuTableViewController.swift */; };
 		BB7B28791EE90D2100C5B01E /* InfeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28781EE90D2100C5B01E /* InfeedTableViewController.swift */; };
 		BB7B287C1EE912C200C5B01E /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B287B1EE912C200C5B01E /* Either.swift */; };
+		BB7B28811EEACF1F00C5B01E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28801EEACF1F00C5B01E /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BB7B28761EE908DC00C5B01E /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		BB7B28781EE90D2100C5B01E /* InfeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfeedTableViewController.swift; sourceTree = "<group>"; };
 		BB7B287B1EE912C200C5B01E /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		BB7B28801EEACF1F00C5B01E /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				BB7B287B1EE912C200C5B01E /* Either.swift */,
+				BB7B28801EEACF1F00C5B01E /* MenuItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				BB7B28791EE90D2100C5B01E /* InfeedTableViewController.swift in Sources */,
 				BB7B28771EE908DC00C5B01E /* MenuTableViewController.swift in Sources */,
 				BB7B28481EE8F84E00C5B01E /* AppDelegate.swift in Sources */,
+				BB7B28811EEACF1F00C5B01E /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

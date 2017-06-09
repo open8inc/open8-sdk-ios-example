@@ -37,10 +37,11 @@ static NSString * const kAdCellIdentifier = @"adCellIdentifier";
     
     self.adManager = [[OEA sharedInstance] createAdManager];
 
-    self.adIndexes = [self _indexSetWithAdRows:@[@0]];
+    NSArray <NSNumber *> *adRows = self.item[@"adRows"];
+    self.adIndexes = [self _indexSetWithAdRows:adRows];
     self.adProviders = [self _createAdProviders];
     
-    self.originalContents = @[@"foo", @"bar", @"baz"];
+    self.originalContents = self.item[@"contents"];
     
     self.contents = [self _mergeContents];
     
