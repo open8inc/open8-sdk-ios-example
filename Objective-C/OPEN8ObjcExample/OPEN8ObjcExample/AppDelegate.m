@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[OEA sharedInstance] activateWithAppKey:@"eb8a38d95676bb06e5aa1dd5ff7a25139680e078" option:nil error:nil];
+    [[OEA sharedInstance] activateWithAppKey:@"<#APP KEY#>" option:nil error:nil];
 
     return YES;
 }

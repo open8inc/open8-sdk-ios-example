@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         do {
-            try OEA.sharedInstance().activate(withAppKey: "bf8def31dbfc03307a46b6acce8711e293679b73", option: nil)
+            try OEA.sharedInstance().activate(withAppKey: "<#APP KEY#>", option: nil)
         } catch {
             // activate function will throw error in the future, but not for now
         }
