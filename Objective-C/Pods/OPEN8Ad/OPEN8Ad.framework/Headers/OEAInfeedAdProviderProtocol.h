@@ -14,8 +14,17 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol OEAInfeedAdViewProtocol;
 @protocol OEAUserIdProtocol;
 
+typedef NS_ENUM(NSInteger, OEAInfeedAdProviderStatus) {
+    OEAInfeedAdProviderStatusInit = 0,
+    OEAInfeedAdProviderStatusFetching = 1,
+    OEAInfeedAdProviderStatusFetched = 2,
+    OEAInfeedAdProviderStatusExpired = 3,
+};
+
 @protocol OEAInfeedAdProviderProtocol <NSObject>
 
+@property (nonatomic, copy, readonly) NSString *identifier;
+@property (nonatomic, assign, readonly) OEAInfeedAdProviderStatus status;
 @property (nonatomic, strong, readonly) NSObject <OEAInfeedAdProtocol> * _Nullable ad;
 @property (nonatomic, assign, readonly, getter=isExpired) BOOL expired;
 @property (nonatomic, weak) id <OEAInfeedAdViewProtocol> infeedAdView;
