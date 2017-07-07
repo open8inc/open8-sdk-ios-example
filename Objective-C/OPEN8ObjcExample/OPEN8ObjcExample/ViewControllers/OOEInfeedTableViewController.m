@@ -98,6 +98,7 @@ static NSString * const kAdCellIdentifier = @"adCellIdentifier";
     for (i = 0; i < count; i++) {
         id <OEAInfeedAdProviderProtocol> adProvider = [self.adManager createAdProviderWithArea:@"APP"];
         adProvider.delegate = self;
+        [adProvider fetchAd];
         [result addObject:adProvider];
     }
 
