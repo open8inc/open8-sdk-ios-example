@@ -14,30 +14,31 @@
 
 /* Begin PBXFileReference section */
 		0175D92C6378F9B2DF451EFC64980588 /* Pods-OPEN8ObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OPEN8ObjcExample.release.xcconfig"; sourceTree = "<group>"; };
-		01AE36F63C69C05A9ECE3DDEA3E1F5E3 /* OEAInfeedAdTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdTableViewCell.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdTableViewCell.h; sourceTree = "<group>"; };
-		1AE06160BACCBA5D7AE8ECBC2D1AF2ED /* OEAInfeedAdProviderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderProtocol.h; sourceTree = "<group>"; };
-		29D06103D0C8D10DF8AFE7990690AD8B /* OPEN8Ad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OPEN8Ad-umbrella.h"; path = "OPEN8Ad.framework/Headers/OPEN8Ad-umbrella.h"; sourceTree = "<group>"; };
+		069CD6B0F5A144CE5C25302F656B8E29 /* OEA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEA.h; path = OPEN8Ad.framework/Headers/OEA.h; sourceTree = "<group>"; };
+		12292781F29364149B293340D159F3A5 /* OPEN8Ad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OPEN8Ad.h; path = OPEN8Ad.framework/Headers/OPEN8Ad.h; sourceTree = "<group>"; };
+		1C59B507E2B166EBC85E810E7BB0720E /* OEAInfeedAdProviderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderDelegate.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderDelegate.h; sourceTree = "<group>"; };
+		256457BFA171AD908ECD5D238B94A6EF /* OEAConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAConstants.h; path = OPEN8Ad.framework/Headers/OEAConstants.h; sourceTree = "<group>"; };
 		2EF4FC97DEE6286EEBC9EB3034C2267C /* Pods-OPEN8ObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OPEN8ObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		34914ECF044A1FF0E8A95D54FD7C0E68 /* OPEN8Ad-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OPEN8Ad-Bridging-Header.h"; path = "OPEN8Ad.framework/Headers/OPEN8Ad-Bridging-Header.h"; sourceTree = "<group>"; };
+		357AC075D9DDE79AE132EE7278E8F906 /* OEAInfeedAdViewCustomizablePropertyProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdViewCustomizablePropertyProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdViewCustomizablePropertyProtocol.h; sourceTree = "<group>"; };
 		36D5995AD9D623380D440F3348103B69 /* Pods-OPEN8ObjcExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OPEN8ObjcExample-resources.sh"; sourceTree = "<group>"; };
-		3CE1D34ECF72DDEB7F90FF850195FCC0 /* OEA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEA.h; path = OPEN8Ad.framework/Headers/OEA.h; sourceTree = "<group>"; };
-		41DB06DB7BBE9E282735B716A5B10226 /* OEAInfeedAdProviderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderDelegate.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderDelegate.h; sourceTree = "<group>"; };
 		4B4EA58209647827838EA2F78B8681D9 /* Pods-OPEN8ObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OPEN8ObjcExample.modulemap"; sourceTree = "<group>"; };
+		4D14E4B888A4D7C248FB9A255F414FEF /* OPEN8Ad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OPEN8Ad-umbrella.h"; path = "OPEN8Ad.framework/Headers/OPEN8Ad-umbrella.h"; sourceTree = "<group>"; };
 		5585E519991CEDA55BA5CEC1FB826E12 /* Pods-OPEN8ObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OPEN8ObjcExample-frameworks.sh"; sourceTree = "<group>"; };
 		56BEC78EBA8D9DA7EA6FC3820FA14102 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65744CA9A21A3667472CEBD86A6B5667 /* OEAInfeedAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdView.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdView.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		82D83B74A490B270D6C3828161283064 /* OEAInfeedAdViewCustomizablePropertyProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdViewCustomizablePropertyProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdViewCustomizablePropertyProtocol.h; sourceTree = "<group>"; };
+		699042023DB4A37A69425F2F505A4003 /* OPEN8Ad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OPEN8Ad.framework; sourceTree = "<group>"; };
+		6CC79D00108FDA65B698E8B8E7BDDD3C /* OEAInfeedAdTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdTableViewCell.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdTableViewCell.h; sourceTree = "<group>"; };
+		75B17CDFD8D5C7931DCFF9BAB30B0057 /* OEAInfeedAdProviderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderProtocol.h; sourceTree = "<group>"; };
+		82686C58A596FDDA8416EE550010F80B /* OEAInfeedAdManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdManagerProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdManagerProtocol.h; sourceTree = "<group>"; };
+		82C70B15B00F880BC6B3A22EBD6056FD /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = OPEN8Ad.framework/Assets.bundle; sourceTree = "<group>"; };
 		8A3B30CC58B9E9A2247B8562789D5049 /* Pods-OPEN8ObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OPEN8ObjcExample-umbrella.h"; sourceTree = "<group>"; };
-		8A98B41C78E20B96C9A2CA8F0EA7B5EF /* OPEN8Ad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OPEN8Ad.h; path = OPEN8Ad.framework/Headers/OPEN8Ad.h; sourceTree = "<group>"; };
 		92DB84FA515DD6B4443C156308FD0ECE /* Pods-OPEN8ObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OPEN8ObjcExample-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB8BA5AFE56D5D05909B83F3F6AB68E3 /* OEAInfeedAdViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdViewProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdViewProtocol.h; sourceTree = "<group>"; };
 		AF9603B5E0DFB0FE09C6E197560C3DAE /* Pods-OPEN8ObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OPEN8ObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E9F575A2EFF7C9D8A6E7BDD2C2705E /* Pods_OPEN8ObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OPEN8ObjcExample.framework; path = "Pods-OPEN8ObjcExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6F410DEACAF7C9290C34D12E90B92A5 /* OEAInfeedAdViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdViewProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdViewProtocol.h; sourceTree = "<group>"; };
-		D63DE505BD381D2ED63AC3B806FB5987 /* OPEN8Ad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OPEN8Ad.framework; sourceTree = "<group>"; };
-		D875FB7813D7ED2C2A19D3F57F35DFC6 /* OEAInfeedAdManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdManagerProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdManagerProtocol.h; sourceTree = "<group>"; };
-		ECC419EF0D5821244A7F22CFA713DCCF /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = OPEN8Ad.framework/Assets.bundle; sourceTree = "<group>"; };
-		F71B64AF1AA443188BE2EA64AA04FF99 /* OPEN8Ad-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OPEN8Ad-Bridging-Header.h"; path = "OPEN8Ad.framework/Headers/OPEN8Ad-Bridging-Header.h"; sourceTree = "<group>"; };
+		DACF7ED4733EE81F16208469C1BAB87F /* OEAInfeedAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdView.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdView.h; sourceTree = "<group>"; };
 		FF94C3D5368378D7E8DE4931F71D9169 /* Pods-OPEN8ObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OPEN8ObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA1E70F455D7724738AF4C254113416 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				699042023DB4A37A69425F2F505A4003 /* OPEN8Ad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		335C64906648DF36E2FA20410CBFE230 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +70,50 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		571428436064BBAA2819DD4A6C8BE832 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82C70B15B00F880BC6B3A22EBD6056FD /* Assets.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		600B0C6444F02D5A8E5AEB769DA743B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6786BB3F73EB919F0DB4DC398B524711 /* OPEN8Ad */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6786BB3F73EB919F0DB4DC398B524711 /* OPEN8Ad */ = {
+			isa = PBXGroup;
+			children = (
+				069CD6B0F5A144CE5C25302F656B8E29 /* OEA.h */,
+				256457BFA171AD908ECD5D238B94A6EF /* OEAConstants.h */,
+				82686C58A596FDDA8416EE550010F80B /* OEAInfeedAdManagerProtocol.h */,
+				1C59B507E2B166EBC85E810E7BB0720E /* OEAInfeedAdProviderDelegate.h */,
+				75B17CDFD8D5C7931DCFF9BAB30B0057 /* OEAInfeedAdProviderProtocol.h */,
+				6CC79D00108FDA65B698E8B8E7BDDD3C /* OEAInfeedAdTableViewCell.h */,
+				DACF7ED4733EE81F16208469C1BAB87F /* OEAInfeedAdView.h */,
+				357AC075D9DDE79AE132EE7278E8F906 /* OEAInfeedAdViewCustomizablePropertyProtocol.h */,
+				AB8BA5AFE56D5D05909B83F3F6AB68E3 /* OEAInfeedAdViewProtocol.h */,
+				12292781F29364149B293340D159F3A5 /* OPEN8Ad.h */,
+				34914ECF044A1FF0E8A95D54FD7C0E68 /* OPEN8Ad-Bridging-Header.h */,
+				4D14E4B888A4D7C248FB9A255F414FEF /* OPEN8Ad-umbrella.h */,
+				0AA1E70F455D7724738AF4C254113416 /* Frameworks */,
+				571428436064BBAA2819DD4A6C8BE832 /* Resources */,
+			);
+			name = OPEN8Ad;
+			path = OPEN8Ad;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8EC69794507832D64F56C2844C41F8FF /* Pods */,
+				600B0C6444F02D5A8E5AEB769DA743B5 /* Pods */,
 				335C64906648DF36E2FA20410CBFE230 /* Products */,
 				7F6FE83236C258E0902B653BA6D6875A /* Targets Support Files */,
 			);
@@ -80,49 +127,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8EC69794507832D64F56C2844C41F8FF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A1AFA774512607A34F238A30C93D6CFE /* OPEN8Ad */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A1AFA774512607A34F238A30C93D6CFE /* OPEN8Ad */ = {
-			isa = PBXGroup;
-			children = (
-				3CE1D34ECF72DDEB7F90FF850195FCC0 /* OEA.h */,
-				D875FB7813D7ED2C2A19D3F57F35DFC6 /* OEAInfeedAdManagerProtocol.h */,
-				41DB06DB7BBE9E282735B716A5B10226 /* OEAInfeedAdProviderDelegate.h */,
-				1AE06160BACCBA5D7AE8ECBC2D1AF2ED /* OEAInfeedAdProviderProtocol.h */,
-				01AE36F63C69C05A9ECE3DDEA3E1F5E3 /* OEAInfeedAdTableViewCell.h */,
-				65744CA9A21A3667472CEBD86A6B5667 /* OEAInfeedAdView.h */,
-				82D83B74A490B270D6C3828161283064 /* OEAInfeedAdViewCustomizablePropertyProtocol.h */,
-				C6F410DEACAF7C9290C34D12E90B92A5 /* OEAInfeedAdViewProtocol.h */,
-				8A98B41C78E20B96C9A2CA8F0EA7B5EF /* OPEN8Ad.h */,
-				F71B64AF1AA443188BE2EA64AA04FF99 /* OPEN8Ad-Bridging-Header.h */,
-				29D06103D0C8D10DF8AFE7990690AD8B /* OPEN8Ad-umbrella.h */,
-				F3FCB1031689AB3AB38042AB4E2530FA /* Frameworks */,
-				C1FE42671E820F3C02C70830FED53CA6 /* Resources */,
-			);
-			name = OPEN8Ad;
-			path = OPEN8Ad;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C1FE42671E820F3C02C70830FED53CA6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				ECC419EF0D5821244A7F22CFA713DCCF /* Assets.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		C5167A23353090A628F0C1F9A4BC68BF /* Pods-OPEN8ObjcExample */ = {
@@ -149,14 +159,6 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		F3FCB1031689AB3AB38042AB4E2530FA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D63DE505BD381D2ED63AC3B806FB5987 /* OPEN8Ad.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

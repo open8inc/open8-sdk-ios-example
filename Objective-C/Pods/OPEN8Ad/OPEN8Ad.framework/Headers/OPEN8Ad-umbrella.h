@@ -12,6 +12,7 @@
 
 #import "OPEN8Ad.h"
 #import "OPEN8Ad-Bridging-Header.h"
+#import "OEAConstants.h"
 #import "OEA.h"
 #import "OEAInfeedAdManagerProtocol.h"
 #import "OEAInfeedAdProviderProtocol.h"

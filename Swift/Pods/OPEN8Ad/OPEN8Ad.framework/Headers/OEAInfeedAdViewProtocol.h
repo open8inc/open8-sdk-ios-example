@@ -12,6 +12,7 @@
 
 @protocol OEAInfeedAdViewProtocol <NSObject>
 
+@property (nonatomic, assign, readonly) BOOL originalHidden;
 @property (nonatomic, retain) NSObject <OEAInfeedAdProviderProtocol> *adProvider;
 
 - (void)startTrackingWithScrollView:(UIScrollView *)scrollView;
