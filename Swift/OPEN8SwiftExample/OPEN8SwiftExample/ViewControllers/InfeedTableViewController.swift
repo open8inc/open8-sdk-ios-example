@@ -52,7 +52,7 @@ class InfeedTableViewController: UITableViewController, OEAInfeedAdProviderDeleg
         switch contents[indexPath.row] {
         case let .Left(original):
             let cell = tableView.dequeueReusableCell(withIdentifier: kOriginalContentCellIdentifier)
-            cell?.textLabel?.text = original
+            cell?.textLabel?.text = "\(indexPath.row) \(original)"
             return cell!
         case let .Right(adProvider):
             let cell = tableView.dequeueReusableCell(withIdentifier: kAdCellIdentifier) as? OEAInfeedAdTableViewCell
@@ -61,10 +61,29 @@ class InfeedTableViewController: UITableViewController, OEAInfeedAdProviderDeleg
         }
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch contents[indexPath.row] {
+        case .Left(_):
+            return UITableViewAutomaticDimension
+        case let .Right(adProvider):
+            return adProvider.height
+        }
+    }
+
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch contents[indexPath.row] {
+        case .Left(_):
+            return UITableViewAutomaticDimension
+        case let .Right(adProvider):
+            return adProvider.estimatedHeight
+        }
+    }
+    
     private func configureTableView() {
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 44.0
         tableView.allowsSelection = false
+        if let ss = item?.separatorStyle {
+            tableView.separatorStyle = ss
+        }
     }
 
     private func createAdProviders(adIndexes: Array<Int>) -> [Int : OEAInfeedAdProviderProtocol] {

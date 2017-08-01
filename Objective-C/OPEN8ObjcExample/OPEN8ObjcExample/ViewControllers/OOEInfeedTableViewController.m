@@ -55,9 +55,10 @@ static NSString * const kAdCellIdentifier = @"adCellIdentifier";
 
 #pragma mark - Table view data source
 - (void)_configureTableView {
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 44.0;
     self.tableView.allowsSelection = NO;
+    if (self.item[@"separatorStyle"]) {
+        self.tableView.separatorStyle = [self.item[@"separatorStyle"] floatValue];
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -77,8 +78,26 @@ static NSString * const kAdCellIdentifier = @"adCellIdentifier";
         return cell;
     } else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kOriginalContentCellIdentifier];
-        cell.textLabel.text = self.contents[indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%ld %@", (long)indexPath.row, self.contents[indexPath.row]];
         return cell;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.adIndexes containsIndex:indexPath.row]) {
+        id <OEAInfeedAdProviderProtocol> adProvider = self.contents[indexPath.row];
+        return adProvider.height;
+    } else {
+        return UITableViewAutomaticDimension;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.adIndexes containsIndex:indexPath.row]) {
+        id <OEAInfeedAdProviderProtocol> adProvider = self.contents[indexPath.row];
+        return adProvider.estimatedHeight;
+    } else {
+        return 44.f;
     }
 }
 

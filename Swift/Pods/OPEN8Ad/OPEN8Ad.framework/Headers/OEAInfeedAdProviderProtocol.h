@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,6 +33,8 @@ typedef NS_ENUM(NSInteger, OEAInfeedAdProviderStatus) {
 @property (nonatomic, assign, getter=isCellRemovable) BOOL cellRemovable;
 @property (nonatomic, strong, readonly) id <OEAUserIdProtocol> userId;
 @property (nonatomic, copy, readonly) NSString *area;
+@property (nonatomic, assign, readonly) CGFloat height;
+@property (nonatomic, assign, readonly) CGFloat estimatedHeight;
 
 - (void)fetchAd;
 

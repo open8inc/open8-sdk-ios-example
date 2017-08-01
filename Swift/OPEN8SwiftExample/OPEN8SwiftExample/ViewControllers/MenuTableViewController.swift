@@ -13,13 +13,13 @@ private let kInfeedSegueIdentifier = "toInfeedViewController"
 class MenuTableViewController: UITableViewController {
     let menuItems = [
         MenuItem(
-            title: "infeed(ad at top)",
+            title: "infeed(ad on the top)",
             segueIdentifier: kInfeedSegueIdentifier,
             adRows: [0],
             contents: ["foo", "bar", "baz"]
         ),
         MenuItem(
-            title: "infeed(ad at middle)",
+            title: "infeed(ad on the middle)",
             segueIdentifier: kInfeedSegueIdentifier,
             adRows: [15],
             contents: [
@@ -29,6 +29,13 @@ class MenuTableViewController: UITableViewController {
                 "foo", "bar", "baz", "foo", "bar", "baz",
                 "foo", "bar", "baz", "foo", "bar", "baz"
             ]
+        ),
+        MenuItem(
+            title: "infeed without cell separator",
+            segueIdentifier: kInfeedSegueIdentifier,
+            adRows: [0],
+            contents: ["foo", "bar", "baz"],
+            separatorStyle: .none
         )
     ]
 

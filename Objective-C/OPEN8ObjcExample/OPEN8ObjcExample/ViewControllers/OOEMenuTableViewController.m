@@ -22,21 +22,27 @@ static NSString * const kInfeedSegueIdentifier = @"toInfeedViewController";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.menuItems = @[@{@"title" : @"infeed(ad at top)",
+    self.menuItems = @[@{@"title" : @"infeed(ad on the top)",
                          @"segueIdentifier" : kInfeedSegueIdentifier,
-                         @"adRows": @[@0],
-                         @"contents": @[@"foo", @"bar", @"baz"]
+                         @"adRows" : @[@0],
+                         @"contents" : @[@"foo", @"bar", @"baz"]
                          },
-                       @{@"title" : @"infeed(ad at middle)",
+                       @{@"title" : @"infeed(ad on the middle)",
                          @"segueIdentifier" : kInfeedSegueIdentifier,
-                         @"adRows": @[@15],
-                         @"contents": @[@"foo", @"bar", @"baz", @"foo", @"bar",
+                         @"adRows" : @[@15],
+                         @"contents" : @[@"foo", @"bar", @"baz", @"foo", @"bar",
                                         @"baz", @"foo", @"bar", @"baz", @"foo",
                                         @"bar", @"baz", @"foo", @"bar", @"baz",
                                         @"foo", @"bar", @"baz", @"foo", @"bar",
                                         @"baz", @"foo", @"bar", @"baz", @"foo",
                                         @"bar", @"baz", @"foo", @"bar", @"baz"
                                         ]
+                         },
+                       @{@"title" : @"infeed without cell separator",
+                         @"segueIdentifier" : kInfeedSegueIdentifier,
+                         @"adRows" : @[@0],
+                         @"contents" : @[@"foo", @"bar", @"baz"],
+                         @"separatorStyle" : @(UITableViewCellSeparatorStyleNone)
                          }
                        ];
 }
