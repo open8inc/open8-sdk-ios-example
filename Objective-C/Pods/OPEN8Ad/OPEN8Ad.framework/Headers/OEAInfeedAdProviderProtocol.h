@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, OEAInfeedAdProviderStatus) {
     OEAInfeedAdProviderStatusFetching = 1,
     OEAInfeedAdProviderStatusFetched = 2,
     OEAInfeedAdProviderStatusExpired = 3,
+    OEAInfeedAdProviderStatusVideoStarted = 4,
 };
 
 @protocol OEAInfeedAdProviderProtocol <NSObject>
