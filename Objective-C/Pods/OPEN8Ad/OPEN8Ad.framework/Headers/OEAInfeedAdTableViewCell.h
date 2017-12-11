@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OEAInfeedAdViewProtocol.h"
 #import "OEAInfeedAdViewCustomizablePropertyProtocol.h"
 
 @interface OEAInfeedAdTableViewCell : UITableViewCell <OEAInfeedAdViewCustomizablePropertyProtocol>

@@ -5,8 +5,6 @@
 //  Copyright (c) 2017-present, OPEN8, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 //! Project version number for OPEN8Ad.
 FOUNDATION_EXPORT double OPEN8AdVersionNumber;
 
@@ -20,6 +18,6 @@ FOUNDATION_EXPORT const unsigned char OPEN8AdVersionString[];
 #import "OEAInfeedAdProviderProtocol.h"
 #import "OEAInfeedAdProviderDelegate.h"
 #import "OEAInfeedAdViewProtocol.h"
-#import "OEAInfeedAdView.h"
 #import "OEAInfeedAdTableViewCell.h"
 #import "OEAInfeedAdViewCustomizablePropertyProtocol.h"
+#import "OEAInfeedAdCollectionViewCell.h"

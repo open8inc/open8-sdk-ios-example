@@ -18,8 +18,8 @@
 #import "OEAInfeedAdProviderProtocol.h"
 #import "OEAInfeedAdProviderDelegate.h"
 #import "OEAInfeedAdViewProtocol.h"
-#import "OEAInfeedAdView.h"
 #import "OEAInfeedAdTableViewCell.h"
+#import "OEAInfeedAdCollectionViewCell.h"
 #import "OEAInfeedAdViewCustomizablePropertyProtocol.h"
 
 FOUNDATION_EXPORT double OPEN8AdVersionNumber;
