@@ -7,6 +7,7 @@
 
 #import "OOEMenuTableViewController.h"
 #import "OOEInfeedTableViewController.h"
+#import "OOEInfeedCollectionViewController.h"
 
 @interface OOEMenuTableViewController ()
 
@@ -17,18 +18,25 @@
 @implementation OOEMenuTableViewController
 
 static NSString * const kMenuItemCellIdentifier = @"menuItem";
-static NSString * const kInfeedSegueIdentifier = @"toInfeedViewController";
+static NSString * const kTableViewSegueIdentifier = @"toTableViewController";
+static NSString * const kCollectionViewSegueIdentifier = @"toCollectionViewController";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.menuItems = @[@{@"title" : @"infeed(ad on the top)",
-                         @"segueIdentifier" : kInfeedSegueIdentifier,
+    self.menuItems = @[@{@"title" : @"TableView (ad on top with cell separator)",
+                         @"segueIdentifier" : kTableViewSegueIdentifier,
                          @"adRows" : @[@0],
                          @"contents" : @[@"foo", @"bar", @"baz"]
                          },
-                       @{@"title" : @"infeed(ad on the middle)",
-                         @"segueIdentifier" : kInfeedSegueIdentifier,
+                       @{@"title" : @"TableView (ad on top without cell separator)",
+                         @"segueIdentifier" : kTableViewSegueIdentifier,
+                         @"adRows" : @[@0],
+                         @"contents" : @[@"foo", @"bar", @"baz"],
+                         @"separatorStyle" : @(UITableViewCellSeparatorStyleNone)
+                         },
+                       @{@"title" : @"TableView (ad in the middle)",
+                         @"segueIdentifier" : kTableViewSegueIdentifier,
                          @"adRows" : @[@15],
                          @"contents" : @[@"foo", @"bar", @"baz", @"foo", @"bar",
                                         @"baz", @"foo", @"bar", @"baz", @"foo",
@@ -38,12 +46,11 @@ static NSString * const kInfeedSegueIdentifier = @"toInfeedViewController";
                                         @"bar", @"baz", @"foo", @"bar", @"baz"
                                         ]
                          },
-                       @{@"title" : @"infeed without cell separator",
-                         @"segueIdentifier" : kInfeedSegueIdentifier,
+                       @{@"title" : @"CollectionView (ad on top)",
+                         @"segueIdentifier" : kCollectionViewSegueIdentifier,
                          @"adRows" : @[@0],
-                         @"contents" : @[@"foo", @"bar", @"baz"],
-                         @"separatorStyle" : @(UITableViewCellSeparatorStyleNone)
-                         }
+                         @"contents" : @[@"foo", @"bar", @"baz"]
+                         },
                        ];
 }
 
@@ -76,8 +83,11 @@ static NSString * const kInfeedSegueIdentifier = @"toInfeedViewController";
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:kInfeedSegueIdentifier]) {
+    if ([segue.identifier isEqualToString:kTableViewSegueIdentifier]) {
         OOEInfeedTableViewController *vc = (OOEInfeedTableViewController *)segue.destinationViewController;
+        vc.item = sender;
+    } else if ([segue.identifier isEqualToString:kCollectionViewSegueIdentifier]) {
+        OOEInfeedCollectionViewController *vc = (OOEInfeedCollectionViewController *)segue.destinationViewController;
         vc.item = sender;
     }
 }

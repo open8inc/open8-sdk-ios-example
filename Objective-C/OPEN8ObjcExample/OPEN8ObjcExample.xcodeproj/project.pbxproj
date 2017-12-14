@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C030B1D1FE23E410062CCD5 /* OOEInfeedCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C030B1C1FE23E410062CCD5 /* OOEInfeedCollectionViewController.m */; };
 		58E8B5DE05589D178E4CFA87 /* Pods_OPEN8ObjcExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB0EA7E9C58AF91DBE0B8B2 /* Pods_OPEN8ObjcExample.framework */; };
 		BB7B27EE1EE7ADC000C5B01E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B27ED1EE7ADC000C5B01E /* main.m */; };
 		BB7B27F11EE7ADC000C5B01E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B27F01EE7ADC000C5B01E /* AppDelegate.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C030B1B1FE23E410062CCD5 /* OOEInfeedCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOEInfeedCollectionViewController.h; sourceTree = "<group>"; };
+		0C030B1C1FE23E410062CCD5 /* OOEInfeedCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OOEInfeedCollectionViewController.m; sourceTree = "<group>"; };
 		6F3ACE73203B4BBA376E6061 /* Pods-OPEN8ObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPEN8ObjcExample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-OPEN8ObjcExample/Pods-OPEN8ObjcExample.release.xcconfig"; sourceTree = "<group>"; };
 		7DBC97252F3F728D97D29C5F /* Pods-OPEN8ObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPEN8ObjcExample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-OPEN8ObjcExample/Pods-OPEN8ObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7B27E91EE7ADC000C5B01E /* OPEN8ObjcExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPEN8ObjcExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +176,8 @@
 				BB7B28341EE7BFDE00C5B01E /* OOEMenuTableViewController.m */,
 				BB7B28361EE7DFA400C5B01E /* OOEInfeedTableViewController.h */,
 				BB7B28371EE7DFA400C5B01E /* OOEInfeedTableViewController.m */,
+				0C030B1B1FE23E410062CCD5 /* OOEInfeedCollectionViewController.h */,
+				0C030B1C1FE23E410062CCD5 /* OOEInfeedCollectionViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7B27F11EE7ADC000C5B01E /* AppDelegate.m in Sources */,
+				0C030B1D1FE23E410062CCD5 /* OOEInfeedCollectionViewController.m in Sources */,
 				BB7B27EE1EE7ADC000C5B01E /* main.m in Sources */,
 				BB7B28381EE7DFA400C5B01E /* OOEInfeedTableViewController.m in Sources */,
 				BB7B28351EE7BFDE00C5B01E /* OOEMenuTableViewController.m in Sources */,
