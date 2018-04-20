@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 @import UIKit;
+@class OEAMoPubAd;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,6 +37,7 @@ typedef NS_ENUM(NSInteger, OEAInfeedAdProviderStatus) {
 @property (nonatomic, copy, readonly) NSString *area;
 @property (nonatomic, assign, readonly) CGFloat height;
 @property (nonatomic, assign, readonly) CGFloat estimatedHeight;
+@property (nonatomic, strong, readonly) OEAMoPubAd * _Nullable mopubAd;
 
 - (void)fetchAd;
 

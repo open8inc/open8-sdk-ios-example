@@ -17,6 +17,8 @@
 #import "OEAInfeedAdManagerProtocol.h"
 #import "OEAInfeedAdProviderProtocol.h"
 #import "OEAInfeedAdProviderDelegate.h"
+#import "OEAMoPubAd.h"
+#import "OEAInfeedAdProviderError.h"
 #import "OEAInfeedAdViewProtocol.h"
 #import "OEAInfeedAdTableViewCell.h"
 #import "OEAInfeedAdCollectionViewCell.h"

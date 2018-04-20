@@ -8,38 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		024869B11C7B1A10C97CDB4A9CFBA79E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3049FB41E03785F8A64BD86F7D9A71F7 /* Pods-OPEN8ObjcExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DB84FA515DD6B4443C156308FD0ECE /* Pods-OPEN8ObjcExample-dummy.m */; };
-		C29D850C6F09B648BA7187BA440F3082 /* Pods-OPEN8ObjcExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3B30CC58B9E9A2247B8562789D5049 /* Pods-OPEN8ObjcExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3049FB41E03785F8A64BD86F7D9A71F7 /* Pods-OPEN8ObjcExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EBD92E6729AC0C1F71BF3F1F7D1E10 /* Pods-OPEN8ObjcExample-dummy.m */; };
+		C29D850C6F09B648BA7187BA440F3082 /* Pods-OPEN8ObjcExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B465AB6DF31CA7C036AAFF2A44226DD3 /* Pods-OPEN8ObjcExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0175D92C6378F9B2DF451EFC64980588 /* Pods-OPEN8ObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OPEN8ObjcExample.release.xcconfig"; sourceTree = "<group>"; };
-		1350C6DE92B724EB7A1515160B8A031C /* OEAInfeedAdViewCustomizablePropertyProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdViewCustomizablePropertyProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdViewCustomizablePropertyProtocol.h; sourceTree = "<group>"; };
-		2AA05186FD588386C2EA7BAF2EA52863 /* OEAConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAConstants.h; path = OPEN8Ad.framework/Headers/OEAConstants.h; sourceTree = "<group>"; };
-		2EF4FC97DEE6286EEBC9EB3034C2267C /* Pods-OPEN8ObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OPEN8ObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		36D5995AD9D623380D440F3348103B69 /* Pods-OPEN8ObjcExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OPEN8ObjcExample-resources.sh"; sourceTree = "<group>"; };
-		4947BD3825B8B4E23007C63E6CB8732C /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = OPEN8Ad.framework/Assets.bundle; sourceTree = "<group>"; };
-		4B4EA58209647827838EA2F78B8681D9 /* Pods-OPEN8ObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OPEN8ObjcExample.modulemap"; sourceTree = "<group>"; };
-		5585E519991CEDA55BA5CEC1FB826E12 /* Pods-OPEN8ObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OPEN8ObjcExample-frameworks.sh"; sourceTree = "<group>"; };
-		56BEC78EBA8D9DA7EA6FC3820FA14102 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57F632F66FBE256FB18BA1C998C10525 /* OPEN8Ad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OPEN8Ad.h; path = OPEN8Ad.framework/Headers/OPEN8Ad.h; sourceTree = "<group>"; };
-		65A7D76FE67C61B9771A6A2EE0ACE3E2 /* OEAInfeedAdTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdTableViewCell.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdTableViewCell.h; sourceTree = "<group>"; };
+		101F6113E82ECD4D727A48685947BE68 /* OEAInfeedAdProviderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderProtocol.h; sourceTree = "<group>"; };
+		2C86CDA16707E5DDABC8133388FF76ED /* OEAMoPubAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAMoPubAd.h; path = OPEN8Ad.framework/Headers/OEAMoPubAd.h; sourceTree = "<group>"; };
+		35CC29F5A2DD068F2C158FDC3339DFBF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D90378DAB586D4459D6B3EEEA925459 /* OEAInfeedAdProviderError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderError.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderError.h; sourceTree = "<group>"; };
+		4A1F177CA64733FBB904E12E9B09760E /* Pods-OPEN8ObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OPEN8ObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
+		55AD422514E7DD97C33DFDA08233AD0A /* OEAConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAConstants.h; path = OPEN8Ad.framework/Headers/OEAConstants.h; sourceTree = "<group>"; };
+		615E5AE79733761FDD6C570AEAFC6C47 /* Pods-OPEN8ObjcExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OPEN8ObjcExample-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7A5D0152B99BBC3E9CBCEFA5CB60428B /* OPEN8Ad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OPEN8Ad.framework; sourceTree = "<group>"; };
-		81E984C0D6A4515450FAEE36B7C9CD5C /* OEAInfeedAdManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdManagerProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdManagerProtocol.h; sourceTree = "<group>"; };
-		8416E642E7C0330C28BA173E0882441B /* OEAInfeedAdViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdViewProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdViewProtocol.h; sourceTree = "<group>"; };
-		8A3B30CC58B9E9A2247B8562789D5049 /* Pods-OPEN8ObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OPEN8ObjcExample-umbrella.h"; sourceTree = "<group>"; };
-		92DB84FA515DD6B4443C156308FD0ECE /* Pods-OPEN8ObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OPEN8ObjcExample-dummy.m"; sourceTree = "<group>"; };
+		6835A1B9E53D8B32055D9C67FBB2EEA6 /* Pods-OPEN8ObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OPEN8ObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		6E0C4E7CEBA60DE4DC30F214A2D0D0DD /* OEAInfeedAdProviderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderDelegate.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderDelegate.h; sourceTree = "<group>"; };
+		709955C3A5CB2771BE652D7912435E44 /* OEA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEA.h; path = OPEN8Ad.framework/Headers/OEA.h; sourceTree = "<group>"; };
+		7E709DB0ECFC28EE5DC63A8AF7A4BF4B /* Pods-OPEN8ObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OPEN8ObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5F9A0811A5F2579E0433A27E853EFA2 /* OEAInfeedAdProviderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderDelegate.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderDelegate.h; sourceTree = "<group>"; };
-		ABB7B16B658E379A7A1DCA9C25DC78E2 /* OPEN8Ad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OPEN8Ad-umbrella.h"; path = "OPEN8Ad.framework/Headers/OPEN8Ad-umbrella.h"; sourceTree = "<group>"; };
-		AF9603B5E0DFB0FE09C6E197560C3DAE /* Pods-OPEN8ObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OPEN8ObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
+		956DD6056CF6F61707EBD576AC374C41 /* OPEN8Ad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OPEN8Ad-umbrella.h"; path = "OPEN8Ad.framework/Headers/OPEN8Ad-umbrella.h"; sourceTree = "<group>"; };
+		9639CDE106AA8E3D77C4D8F51F0AE10E /* Pods-OPEN8ObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OPEN8ObjcExample.release.xcconfig"; sourceTree = "<group>"; };
+		9D1CC5FD307BE7A8069FE13CF9884B85 /* Pods-OPEN8ObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OPEN8ObjcExample.modulemap"; sourceTree = "<group>"; };
+		A5969956E9DEA96C80319B51BCBA9235 /* OEAInfeedAdViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdViewProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdViewProtocol.h; sourceTree = "<group>"; };
+		B465AB6DF31CA7C036AAFF2A44226DD3 /* Pods-OPEN8ObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OPEN8ObjcExample-umbrella.h"; sourceTree = "<group>"; };
+		C1A3A1507FB95E5F1BEE3D209190991B /* OEAInfeedAdManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdManagerProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdManagerProtocol.h; sourceTree = "<group>"; };
+		C1AD1A0517EF26A17F0D6DE537468ECB /* OPEN8Ad-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OPEN8Ad-Bridging-Header.h"; path = "OPEN8Ad.framework/Headers/OPEN8Ad-Bridging-Header.h"; sourceTree = "<group>"; };
 		C2E9F575A2EFF7C9D8A6E7BDD2C2705E /* Pods_OPEN8ObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OPEN8ObjcExample.framework; path = "Pods-OPEN8ObjcExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC031423EF8C77717511424357FE5FDA /* OEAInfeedAdProviderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdProviderProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdProviderProtocol.h; sourceTree = "<group>"; };
-		E0B709DC1AA4E22F110EF14E38A59473 /* OEA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEA.h; path = OPEN8Ad.framework/Headers/OEA.h; sourceTree = "<group>"; };
-		E8C125082AE46E38FAAFF947E1269887 /* OPEN8Ad-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OPEN8Ad-Bridging-Header.h"; path = "OPEN8Ad.framework/Headers/OPEN8Ad-Bridging-Header.h"; sourceTree = "<group>"; };
-		F66A40E96C89BE7AD707139CD170429C /* OEAInfeedAdCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdCollectionViewCell.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdCollectionViewCell.h; sourceTree = "<group>"; };
-		FF94C3D5368378D7E8DE4931F71D9169 /* Pods-OPEN8ObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OPEN8ObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8B52EBA114B996C7624CA62C16229E5 /* OPEN8Ad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OPEN8Ad.framework; sourceTree = "<group>"; };
+		CA07283CA9BDF6E6AD632B0C428B3A61 /* Pods-OPEN8ObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OPEN8ObjcExample-frameworks.sh"; sourceTree = "<group>"; };
+		CA813551FED6D92C461BB976D296B4DF /* OEAInfeedAdCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdCollectionViewCell.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdCollectionViewCell.h; sourceTree = "<group>"; };
+		D2EBD92E6729AC0C1F71BF3F1F7D1E10 /* Pods-OPEN8ObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OPEN8ObjcExample-dummy.m"; sourceTree = "<group>"; };
+		D4DF5FBA7AE71C840EFD593487AB8DC4 /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = OPEN8Ad.framework/Assets.bundle; sourceTree = "<group>"; };
+		F067DFFF4F7AF7E2248D68194D57AC67 /* OEAInfeedAdTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdTableViewCell.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdTableViewCell.h; sourceTree = "<group>"; };
+		F5BAC16BC7534D0C325AC16A051B7ADD /* OPEN8Ad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OPEN8Ad.h; path = OPEN8Ad.framework/Headers/OPEN8Ad.h; sourceTree = "<group>"; };
+		F8C3BE670A083FED3F5CB5D02B54F5FF /* OEAInfeedAdViewCustomizablePropertyProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OEAInfeedAdViewCustomizablePropertyProtocol.h; path = OPEN8Ad.framework/Headers/OEAInfeedAdViewCustomizablePropertyProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,34 +56,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02A7C4C8346DB1B93A2A2B21EEC04EC4 /* Resources */ = {
+		1C053B510ED7B19E047815C101916F19 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4947BD3825B8B4E23007C63E6CB8732C /* Assets.bundle */,
+				7E0989C2A406EE4E7A2C65E7D1082F52 /* OPEN8Ad */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		26EE44A7B0700E82EC7ABAB3ED5196C5 /* OPEN8Ad */ = {
-			isa = PBXGroup;
-			children = (
-				E0B709DC1AA4E22F110EF14E38A59473 /* OEA.h */,
-				2AA05186FD588386C2EA7BAF2EA52863 /* OEAConstants.h */,
-				F66A40E96C89BE7AD707139CD170429C /* OEAInfeedAdCollectionViewCell.h */,
-				81E984C0D6A4515450FAEE36B7C9CD5C /* OEAInfeedAdManagerProtocol.h */,
-				A5F9A0811A5F2579E0433A27E853EFA2 /* OEAInfeedAdProviderDelegate.h */,
-				DC031423EF8C77717511424357FE5FDA /* OEAInfeedAdProviderProtocol.h */,
-				65A7D76FE67C61B9771A6A2EE0ACE3E2 /* OEAInfeedAdTableViewCell.h */,
-				1350C6DE92B724EB7A1515160B8A031C /* OEAInfeedAdViewCustomizablePropertyProtocol.h */,
-				8416E642E7C0330C28BA173E0882441B /* OEAInfeedAdViewProtocol.h */,
-				57F632F66FBE256FB18BA1C998C10525 /* OPEN8Ad.h */,
-				E8C125082AE46E38FAAFF947E1269887 /* OPEN8Ad-Bridging-Header.h */,
-				ABB7B16B658E379A7A1DCA9C25DC78E2 /* OPEN8Ad-umbrella.h */,
-				5C659A7B5044A442E8BE65AA079E8AC0 /* Frameworks */,
-				02A7C4C8346DB1B93A2A2B21EEC04EC4 /* Resources */,
-			);
-			name = OPEN8Ad;
-			path = OPEN8Ad;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		335C64906648DF36E2FA20410CBFE230 /* Products */ = {
@@ -92,20 +72,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C659A7B5044A442E8BE65AA079E8AC0 /* Frameworks */ = {
+		7982927434853D7427C1EE4E7FAC5A4B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7A5D0152B99BBC3E9CBCEFA5CB60428B /* OPEN8Ad.framework */,
+				D4DF5FBA7AE71C840EFD593487AB8DC4 /* Assets.bundle */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		600B0C6444F02D5A8E5AEB769DA743B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				26EE44A7B0700E82EC7ABAB3ED5196C5 /* OPEN8Ad */,
-			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -113,18 +85,50 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				600B0C6444F02D5A8E5AEB769DA743B5 /* Pods */,
+				1C053B510ED7B19E047815C101916F19 /* Pods */,
 				335C64906648DF36E2FA20410CBFE230 /* Products */,
 				7F6FE83236C258E0902B653BA6D6875A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
+		7E0989C2A406EE4E7A2C65E7D1082F52 /* OPEN8Ad */ = {
+			isa = PBXGroup;
+			children = (
+				709955C3A5CB2771BE652D7912435E44 /* OEA.h */,
+				55AD422514E7DD97C33DFDA08233AD0A /* OEAConstants.h */,
+				CA813551FED6D92C461BB976D296B4DF /* OEAInfeedAdCollectionViewCell.h */,
+				C1A3A1507FB95E5F1BEE3D209190991B /* OEAInfeedAdManagerProtocol.h */,
+				6E0C4E7CEBA60DE4DC30F214A2D0D0DD /* OEAInfeedAdProviderDelegate.h */,
+				3D90378DAB586D4459D6B3EEEA925459 /* OEAInfeedAdProviderError.h */,
+				101F6113E82ECD4D727A48685947BE68 /* OEAInfeedAdProviderProtocol.h */,
+				F067DFFF4F7AF7E2248D68194D57AC67 /* OEAInfeedAdTableViewCell.h */,
+				F8C3BE670A083FED3F5CB5D02B54F5FF /* OEAInfeedAdViewCustomizablePropertyProtocol.h */,
+				A5969956E9DEA96C80319B51BCBA9235 /* OEAInfeedAdViewProtocol.h */,
+				2C86CDA16707E5DDABC8133388FF76ED /* OEAMoPubAd.h */,
+				F5BAC16BC7534D0C325AC16A051B7ADD /* OPEN8Ad.h */,
+				C1AD1A0517EF26A17F0D6DE537468ECB /* OPEN8Ad-Bridging-Header.h */,
+				956DD6056CF6F61707EBD576AC374C41 /* OPEN8Ad-umbrella.h */,
+				96FA20219B78C0E2262D432F9F469197 /* Frameworks */,
+				7982927434853D7427C1EE4E7FAC5A4B /* Resources */,
+			);
+			name = OPEN8Ad;
+			path = OPEN8Ad;
+			sourceTree = "<group>";
+		};
 		7F6FE83236C258E0902B653BA6D6875A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C5167A23353090A628F0C1F9A4BC68BF /* Pods-OPEN8ObjcExample */,
+				C5E04FF9A3DDF978FA7AB3AC839CC3D3 /* Pods-OPEN8ObjcExample */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		96FA20219B78C0E2262D432F9F469197 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8B52EBA114B996C7624CA62C16229E5 /* OPEN8Ad.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -135,19 +139,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C5167A23353090A628F0C1F9A4BC68BF /* Pods-OPEN8ObjcExample */ = {
+		C5E04FF9A3DDF978FA7AB3AC839CC3D3 /* Pods-OPEN8ObjcExample */ = {
 			isa = PBXGroup;
 			children = (
-				56BEC78EBA8D9DA7EA6FC3820FA14102 /* Info.plist */,
-				4B4EA58209647827838EA2F78B8681D9 /* Pods-OPEN8ObjcExample.modulemap */,
-				FF94C3D5368378D7E8DE4931F71D9169 /* Pods-OPEN8ObjcExample-acknowledgements.markdown */,
-				2EF4FC97DEE6286EEBC9EB3034C2267C /* Pods-OPEN8ObjcExample-acknowledgements.plist */,
-				92DB84FA515DD6B4443C156308FD0ECE /* Pods-OPEN8ObjcExample-dummy.m */,
-				5585E519991CEDA55BA5CEC1FB826E12 /* Pods-OPEN8ObjcExample-frameworks.sh */,
-				36D5995AD9D623380D440F3348103B69 /* Pods-OPEN8ObjcExample-resources.sh */,
-				8A3B30CC58B9E9A2247B8562789D5049 /* Pods-OPEN8ObjcExample-umbrella.h */,
-				AF9603B5E0DFB0FE09C6E197560C3DAE /* Pods-OPEN8ObjcExample.debug.xcconfig */,
-				0175D92C6378F9B2DF451EFC64980588 /* Pods-OPEN8ObjcExample.release.xcconfig */,
+				35CC29F5A2DD068F2C158FDC3339DFBF /* Info.plist */,
+				9D1CC5FD307BE7A8069FE13CF9884B85 /* Pods-OPEN8ObjcExample.modulemap */,
+				7E709DB0ECFC28EE5DC63A8AF7A4BF4B /* Pods-OPEN8ObjcExample-acknowledgements.markdown */,
+				6835A1B9E53D8B32055D9C67FBB2EEA6 /* Pods-OPEN8ObjcExample-acknowledgements.plist */,
+				D2EBD92E6729AC0C1F71BF3F1F7D1E10 /* Pods-OPEN8ObjcExample-dummy.m */,
+				CA07283CA9BDF6E6AD632B0C428B3A61 /* Pods-OPEN8ObjcExample-frameworks.sh */,
+				615E5AE79733761FDD6C570AEAFC6C47 /* Pods-OPEN8ObjcExample-resources.sh */,
+				B465AB6DF31CA7C036AAFF2A44226DD3 /* Pods-OPEN8ObjcExample-umbrella.h */,
+				4A1F177CA64733FBB904E12E9B09760E /* Pods-OPEN8ObjcExample.debug.xcconfig */,
+				9639CDE106AA8E3D77C4D8F51F0AE10E /* Pods-OPEN8ObjcExample.release.xcconfig */,
 			);
 			name = "Pods-OPEN8ObjcExample";
 			path = "Target Support Files/Pods-OPEN8ObjcExample";
@@ -198,8 +202,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -232,7 +236,7 @@
 /* Begin XCBuildConfiguration section */
 		35EE8904A3B99E1BCBD43A1AD52385C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF9603B5E0DFB0FE09C6E197560C3DAE /* Pods-OPEN8ObjcExample.debug.xcconfig */;
+			baseConfigurationReference = 4A1F177CA64733FBB904E12E9B09760E /* Pods-OPEN8ObjcExample.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -262,7 +266,7 @@
 			};
 			name = Debug;
 		};
-		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+		C3E37FB098AE76440E29106ADBF00CEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,10 +276,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -283,61 +289,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -377,9 +329,67 @@
 			};
 			name = Debug;
 		};
+		DA03565BE765DB55C6448FB363A44481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
 		FB4430A23589F79D1C64421AA0790CF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0175D92C6378F9B2DF451EFC64980588 /* Pods-OPEN8ObjcExample.release.xcconfig */;
+			baseConfigurationReference = 9639CDE106AA8E3D77C4D8F51F0AE10E /* Pods-OPEN8ObjcExample.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -416,8 +426,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
-				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+				C3E37FB098AE76440E29106ADBF00CEB /* Debug */,
+				DA03565BE765DB55C6448FB363A44481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

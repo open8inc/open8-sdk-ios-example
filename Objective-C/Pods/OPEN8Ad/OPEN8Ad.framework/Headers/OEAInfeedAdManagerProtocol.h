@@ -15,6 +15,8 @@
 
 @protocol OEAInfeedAdManagerProtocol <NSObject>
 
+@property (nonatomic, assign) BOOL enableVideoPrecaching;
+
 - (id <OEAInfeedAdProviderProtocol>)createAdProvider;
 - (id <OEAInfeedAdProviderProtocol>)createAdProviderWithArea:(NSString *)area;
 - (OEAInfeedAdView *)createView;

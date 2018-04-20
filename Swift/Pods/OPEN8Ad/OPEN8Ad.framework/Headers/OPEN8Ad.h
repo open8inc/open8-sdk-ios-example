@@ -14,9 +14,12 @@ FOUNDATION_EXPORT const unsigned char OPEN8AdVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <OPEN8Ad/PublicHeader.h>
 
 #import "OEA.h"
+#import "OEAConstants.h"
 #import "OEAInfeedAdManagerProtocol.h"
 #import "OEAInfeedAdProviderProtocol.h"
 #import "OEAInfeedAdProviderDelegate.h"
+#import "OEAMoPubAd.h"
+#import "OEAInfeedAdProviderError.h"
 #import "OEAInfeedAdViewProtocol.h"
 #import "OEAInfeedAdTableViewCell.h"
 #import "OEAInfeedAdViewCustomizablePropertyProtocol.h"
