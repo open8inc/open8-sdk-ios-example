@@ -24,3 +24,4 @@ FOUNDATION_EXPORT const unsigned char OPEN8AdVersionString[];
 #import "OEAInfeedAdTableViewCell.h"
 #import "OEAInfeedAdViewCustomizablePropertyProtocol.h"
 #import "OEAInfeedAdCollectionViewCell.h"
+#import "OEAInfeedAdView.h"
