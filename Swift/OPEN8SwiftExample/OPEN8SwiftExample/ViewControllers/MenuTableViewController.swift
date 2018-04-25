@@ -9,6 +9,7 @@ import UIKit
 
 private let kMenuItemCellIdentifier = "menuItem"
 private let kInfeedSegueIdentifier = "toInfeedViewController"
+private let kCollectionViewSegueIdentifier = "toCollectionViewController"
 
 class MenuTableViewController: UITableViewController {
     let menuItems = [
@@ -36,6 +37,18 @@ class MenuTableViewController: UITableViewController {
             adRows: [0],
             contents: ["foo", "bar", "baz"],
             separatorStyle: .none
+        ),
+        MenuItem(
+            title: "Collectin view",
+            segueIdentifier: kCollectionViewSegueIdentifier,
+            adRows: [0, 5, 10],
+            contents: [
+                "foo", "bar", "baz", "foo", "bar", "baz",
+                "foo", "bar", "baz", "foo", "bar", "baz",
+                "foo", "bar", "baz", "foo", "bar", "baz",
+                "foo", "bar", "baz", "foo", "bar", "baz",
+                "foo", "bar", "baz", "foo", "bar", "baz"
+            ]
         )
     ]
 
@@ -82,9 +95,13 @@ class MenuTableViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == kInfeedSegueIdentifier {
-            if let menuItem = sender as? MenuItem, let vc = segue.destination as? InfeedTableViewController {
-                vc.item = menuItem
+        if (segue.identifier == kInfeedSegueIdentifier || segue.identifier == kCollectionViewSegueIdentifier) {
+            if let menuItem = sender as? MenuItem {
+                if let vc = segue.destination as? InfeedTableViewController {
+                    vc.item = menuItem
+                } else if let vc = segue.destination as? CollectionViewController {
+                    vc.item = menuItem
+                }
             }
         }
     }

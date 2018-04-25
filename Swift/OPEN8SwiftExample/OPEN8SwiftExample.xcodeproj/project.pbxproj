@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D226740FB1889B3BB93DF0E /* Pods_OPEN8SwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153C7088D0093517A38102EA /* Pods_OPEN8SwiftExample.framework */; };
+		89484EFF20902AFA006699EA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89484EFE20902AFA006699EA /* CollectionViewController.swift */; };
 		BB7B28481EE8F84E00C5B01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28471EE8F84E00C5B01E /* AppDelegate.swift */; };
 		BB7B284D1EE8F84E00C5B01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7B284B1EE8F84E00C5B01E /* Main.storyboard */; };
 		BB7B284F1EE8F84E00C5B01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7B284E1EE8F84E00C5B01E /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		153C7088D0093517A38102EA /* Pods_OPEN8SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OPEN8SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB859A7A8D02B62CC802DAE /* Pods-OPEN8SwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPEN8SwiftExample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample.release.xcconfig"; sourceTree = "<group>"; };
+		89484EFE20902AFA006699EA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		BA27795EB2E1EF336C91325C /* Pods-OPEN8SwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPEN8SwiftExample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7B28441EE8F84E00C5B01E /* OPEN8SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPEN8SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7B28471EE8F84E00C5B01E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				BB7B28761EE908DC00C5B01E /* MenuTableViewController.swift */,
 				BB7B28781EE90D2100C5B01E /* InfeedTableViewController.swift */,
+				89484EFE20902AFA006699EA /* CollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89484EFF20902AFA006699EA /* CollectionViewController.swift in Sources */,
 				BB7B287C1EE912C200C5B01E /* Either.swift in Sources */,
 				BB7B28791EE90D2100C5B01E /* InfeedTableViewController.swift in Sources */,
 				BB7B28771EE908DC00C5B01E /* MenuTableViewController.swift in Sources */,
