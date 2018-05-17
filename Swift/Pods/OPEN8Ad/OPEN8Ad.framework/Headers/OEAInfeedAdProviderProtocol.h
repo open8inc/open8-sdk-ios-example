@@ -40,6 +40,7 @@ typedef NS_ENUM(NSInteger, OEAInfeedAdProviderStatus) {
 @property (nonatomic, strong, readonly) OEAMoPubAd * _Nullable mopubAd;
 
 - (void)fetchAd;
+- (CGFloat)heightByWidth:(CGFloat)width;
 
 @end
 

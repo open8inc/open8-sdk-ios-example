@@ -16,5 +16,6 @@
 @property (nonatomic, retain) NSObject <OEAInfeedAdProviderProtocol> *adProvider;
 
 - (void)startTrackingWithScrollView:(UIScrollView *)scrollView;
+- (CGFloat)heightByWidth:(CGFloat)width;
 
 @end
