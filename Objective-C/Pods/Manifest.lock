@@ -1,16 +1,16 @@
 PODS:
-  - OPEN8Ad (1.3.2)
+  - OPEN8Ad (1.3.3)
 
 DEPENDENCIES:
-  - OPEN8Ad (<= 1.3.2)
+  - OPEN8Ad
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - OPEN8Ad
 
 SPEC CHECKSUMS:
-  OPEN8Ad: 8eb9e2dce6103ec8a35d7c61aadf85c9f3d83c0d
+  OPEN8Ad: 1144746d5fdb8a96db9b28a19d5c1bd3a4bb5960
 
-PODFILE CHECKSUM: a6d7b719a3cd7d67a7d1e423a58a52d730af979b
+PODFILE CHECKSUM: 2c03854cb4ea244f15021acf433fdc8c6d30531c
 
 COCOAPODS: 1.5.3
