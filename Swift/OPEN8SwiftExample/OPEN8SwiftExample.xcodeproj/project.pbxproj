@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D226740FB1889B3BB93DF0E /* Pods_OPEN8SwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153C7088D0093517A38102EA /* Pods_OPEN8SwiftExample.framework */; };
+		625D74CA21900E5C00A845CA /* infeedSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625D74C921900E5C00A845CA /* infeedSubViewController.swift */; };
 		89484EFF20902AFA006699EA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89484EFE20902AFA006699EA /* CollectionViewController.swift */; };
 		BB7B28481EE8F84E00C5B01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B28471EE8F84E00C5B01E /* AppDelegate.swift */; };
 		BB7B284D1EE8F84E00C5B01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7B284B1EE8F84E00C5B01E /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		153C7088D0093517A38102EA /* Pods_OPEN8SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OPEN8SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB859A7A8D02B62CC802DAE /* Pods-OPEN8SwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPEN8SwiftExample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample.release.xcconfig"; sourceTree = "<group>"; };
+		625D74C921900E5C00A845CA /* infeedSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infeedSubViewController.swift; sourceTree = "<group>"; };
 		89484EFE20902AFA006699EA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		BA27795EB2E1EF336C91325C /* Pods-OPEN8SwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPEN8SwiftExample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7B28441EE8F84E00C5B01E /* OPEN8SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPEN8SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 				BB7B28761EE908DC00C5B01E /* MenuTableViewController.swift */,
 				BB7B28781EE90D2100C5B01E /* InfeedTableViewController.swift */,
 				89484EFE20902AFA006699EA /* CollectionViewController.swift */,
+				625D74C921900E5C00A845CA /* infeedSubViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,8 +191,8 @@
 				BB7B28401EE8F84E00C5B01E /* Sources */,
 				BB7B28411EE8F84E00C5B01E /* Frameworks */,
 				BB7B28421EE8F84E00C5B01E /* Resources */,
-				CF7037A9AF005811D1E8957A /* [CP] Embed Pods Frameworks */,
-				69D9646032F4149AF5A3CC70 /* [CP] Copy Pods Resources */,
+				1006ADE65BB5C86D3536A9E2 /* [CP] Embed Pods Frameworks */,
+				D67A9317385C40BE4BB6A4E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,22 +316,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		69D9646032F4149AF5A3CC70 /* [CP] Copy Pods Resources */ = {
+		1006ADE65BB5C86D3536A9E2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample-resources.sh",
-				"${PODS_ROOT}/OPEN8Ad/OPEN8Ad.framework/Assets.bundle",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample-frameworks.sh",
+				"${PODS_ROOT}/OPEN8Ad/OPEN8Ad.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OPEN8Ad.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9727F9AE328F952A4D0E9810 /* [CP] Check Pods Manifest.lock */ = {
@@ -349,22 +356,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF7037A9AF005811D1E8957A /* [CP] Embed Pods Frameworks */ = {
+		D67A9317385C40BE4BB6A4E3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample-frameworks.sh",
-				"${PODS_ROOT}/OPEN8Ad/OPEN8Ad.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample-resources.sh",
+				"${PODS_ROOT}/OPEN8Ad/OPEN8Ad.framework/Assets.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OPEN8Ad.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-OPEN8SwiftExample/Pods-OPEN8SwiftExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -380,6 +391,7 @@
 				BB7B28771EE908DC00C5B01E /* MenuTableViewController.swift in Sources */,
 				BB7B28481EE8F84E00C5B01E /* AppDelegate.swift in Sources */,
 				BB7B28811EEACF1F00C5B01E /* MenuItem.swift in Sources */,
+				625D74CA21900E5C00A845CA /* infeedSubViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

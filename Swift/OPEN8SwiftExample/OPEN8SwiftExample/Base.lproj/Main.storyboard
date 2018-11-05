@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2IS-AF-2Z9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2IS-AF-2Z9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -45,6 +45,7 @@
                     <connections>
                         <segue destination="N6Q-Hq-vdO" kind="show" identifier="toInfeedViewController" id="zQM-QN-hkA"/>
                         <segue destination="2r3-yl-4vO" kind="show" identifier="toCollectionViewController" id="urN-1r-Rq8"/>
+                        <segue destination="NUM-dp-X8e" kind="show" identifier="toSubViewController" id="2QD-u0-uCV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwu-mz-Feh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -103,6 +104,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpM-es-Rlt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="656.79999999999995" y="1004.3478260869566"/>
+        </scene>
+        <!--Infeed Sub View Controller-->
+        <scene sceneID="7be-fS-NIg">
+            <objects>
+                <viewController id="NUM-dp-X8e" customClass="infeedSubViewController" customModule="OPEN8SwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gKe-uh-QI7"/>
+                        <viewControllerLayoutGuide type="bottom" id="xVP-8R-FjF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tdW-La-cy4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pkl-vy-oAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543" y="1007"/>
         </scene>
         <!--Infeed Table View Controller-->
         <scene sceneID="bsP-dN-6gC">

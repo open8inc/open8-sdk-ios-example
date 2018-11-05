@@ -10,6 +10,7 @@ import UIKit
 private let kMenuItemCellIdentifier = "menuItem"
 private let kInfeedSegueIdentifier = "toInfeedViewController"
 private let kCollectionViewSegueIdentifier = "toCollectionViewController"
+private let kSubViewInfeedSegueIdentifier = "toSubViewController"
 
 class MenuTableViewController: UITableViewController {
     let menuItems = [
@@ -49,6 +50,12 @@ class MenuTableViewController: UITableViewController {
                 "foo", "bar", "baz", "foo", "bar", "baz",
                 "foo", "bar", "baz", "foo", "bar", "baz"
             ]
+        ),
+        MenuItem(
+            title: "infeed sub view",
+            segueIdentifier: kSubViewInfeedSegueIdentifier,
+            adRows: [0],
+            contents: ["foo", "bar", "baz"]
         )
     ]
 
@@ -95,11 +102,13 @@ class MenuTableViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == kInfeedSegueIdentifier || segue.identifier == kCollectionViewSegueIdentifier) {
+        if (segue.identifier == kInfeedSegueIdentifier || segue.identifier == kCollectionViewSegueIdentifier || segue.identifier == kSubViewInfeedSegueIdentifier) {
             if let menuItem = sender as? MenuItem {
                 if let vc = segue.destination as? InfeedTableViewController {
                     vc.item = menuItem
                 } else if let vc = segue.destination as? CollectionViewController {
+                    vc.item = menuItem
+                } else if let vc = segue.destination as? infeedSubViewController  {
                     vc.item = menuItem
                 }
             }
