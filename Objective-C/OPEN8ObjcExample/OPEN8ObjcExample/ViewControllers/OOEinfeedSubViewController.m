@@ -13,7 +13,6 @@
 
 @property (nonatomic, strong) id <OEAInfeedAdManagerProtocol> adManager;
 @property (nonatomic, strong) NSArray<id <OEAInfeedAdProviderProtocol>> *adProvider;
-//@property (nonatomic, strong) id <OEAInfeedAdProviderProtocol> adProvider;
 @property (nonatomic, strong) NSIndexSet *adIndexes;
 @property (nonatomic, strong) NSArray <NSString *> *originalContents;
 @property (nonatomic, strong) NSMutableArray *subViewY;
@@ -41,44 +40,19 @@ static NSUInteger subViewNo = 0;
     
     subViewNo = 0;
     CGRect size = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/2+60);
-    CGRect scrollSize = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height*2);
+    CGRect scrollSize = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:scrollSize];
     scrollView.delegate = (id)self;
-    scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height*7);
+    scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height);
     [self.view addSubview:scrollView];
 
-    OEAInfeedAdSubView *subView1 = [self createView:size];
-    [scrollView addSubview:subView1];
+    OEAInfeedAdSubView *subView = [self createView:size];
+    [scrollView addSubview:subView];
     
-    [self.adManager bindAdProvider:self.adProvider[subViewNo] toView:subView1 onScrollView:scrollView];
-    
-    _subViewY = [[NSMutableArray alloc] init];
-    [_subViewY addObject:[NSNumber numberWithInteger:size.origin.y]];
-    
-    size = [self getSize:size];
-    OEAInfeedAdSubView *subView2 = [self createView:size];
-    [scrollView addSubview:subView2];
-    
-    size = [self getSize:size];
-    OEAInfeedAdSubView *subView3 = [self createView:size];
-    [scrollView addSubview:subView3];
-    
-    size = [self getSize:size];
-    OEAInfeedAdSubView *subView4 = [self createView:size];
-    [scrollView addSubview:subView4];
-    
-    size = [self getSize:size];
-    OEAInfeedAdSubView *subView5 = [self createView:size];
-    [scrollView addSubview:subView5];
-    
-    _subViewArray = [[NSMutableArray alloc] init];
-    [_subViewArray addObject:subView1];
-    [_subViewArray addObject:subView2];
-    [_subViewArray addObject:subView3];
-    [_subViewArray addObject:subView4];
-    [_subViewArray addObject:subView5];
-    
+    [self.adManager bindAdProvider:self.adProvider[subViewNo] toView:subView onScrollView:scrollView];
+
+    [_subViewArray addObject:subView];
 }
 
 - (CGRect)getSize: (CGRect)size{
