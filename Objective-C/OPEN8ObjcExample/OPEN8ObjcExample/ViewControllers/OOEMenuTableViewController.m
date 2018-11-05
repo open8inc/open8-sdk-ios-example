@@ -8,6 +8,7 @@
 #import "OOEMenuTableViewController.h"
 #import "OOEInfeedTableViewController.h"
 #import "OOEInfeedCollectionViewController.h"
+#import "OOEInfeedSubViewController.h"
 
 @interface OOEMenuTableViewController ()
 
@@ -20,6 +21,7 @@
 static NSString * const kMenuItemCellIdentifier = @"menuItem";
 static NSString * const kTableViewSegueIdentifier = @"toTableViewController";
 static NSString * const kCollectionViewSegueIdentifier = @"toCollectionViewController";
+static NSString * const kSubViewSegueIdentifier = @"toSubViewController";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,7 +53,11 @@ static NSString * const kCollectionViewSegueIdentifier = @"toCollectionViewContr
                          @"adRows" : @[@0],
                          @"contents" : @[@"foo", @"bar", @"baz"]
                          },
-                       ];
+                       @{@"title" : @"SubView (ad on top)",
+                         @"segueIdentifier" : kSubViewSegueIdentifier,
+                         @"adRows" : @[@0]
+                         },
+                       ];                    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -88,6 +94,9 @@ static NSString * const kCollectionViewSegueIdentifier = @"toCollectionViewContr
         vc.item = sender;
     } else if ([segue.identifier isEqualToString:kCollectionViewSegueIdentifier]) {
         OOEInfeedCollectionViewController *vc = (OOEInfeedCollectionViewController *)segue.destinationViewController;
+        vc.item = sender;
+    } else if ([segue.identifier isEqualToString:kSubViewSegueIdentifier]){
+        OOEInfeedSubViewController *vc = (OOEInfeedSubViewController *)segue.destinationViewController;
         vc.item = sender;
     }
 }
